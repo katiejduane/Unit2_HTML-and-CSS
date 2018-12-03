@@ -1,0 +1,32 @@
+.navbar {
+    max-width: 968px;
+    margin: 0 auto;
+}
+
+.nav-left a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.nav-left a:hover {
+    color: #85cec2;
+    border-bottom: 3px solid #85cec2;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: inline-block;
+}
+
+.nav-center i {
+    margin-left: 140px;
+    margin-right: 140px;
+    color: rgb(77, 191, 236)
+}
+
+.nav-right {
+    float: right;
+}
