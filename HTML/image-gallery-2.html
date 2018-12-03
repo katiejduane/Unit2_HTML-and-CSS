@@ -1,0 +1,110 @@
+<!-- Image Gallery Take Two! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The cutest baby in the world: MY NEPHEW!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    #gallery-wrapper{
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 5px;
+            margin-left: 20px;
+            margin-right: 20px;
+           
+        }
+        #about-section{
+            margin: 10px;
+                }
+        #bio{
+            max-width: 60%;
+            margin: 0 auto;
+            /* text-align: center; */
+        }
+        #big-photo{
+            border: dotted lightsteelblue 4px;
+            margin: 10px;
+            padding: 10px;
+            /* display: inline-block; */
+            width: 70%;
+            float: left;
+            
+            
+        }
+        #thumbs{
+            padding: 10px;
+            margin-left: 30%
+        
+        }
+        .thumb{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            margin: 5px
+        }
+
+        .full-size{
+            height:30em;
+            
+        }
+
+        .thumb-cont{
+            display: inline-block;
+            width: 6em;
+            height: 6em;
+
+        }
+
+        .adjust{
+            transform: rotate(90deg)
+        }
+
+        h1 {
+            color: steelblue
+        }
+        p {
+            color: grey
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery-wrapper">
+        <div id="about-section">
+            <h1>Quinn! The cutest baby on the planet.</h1>
+        <div id="bio">
+            <p> Quinn is my nephew. His birthday is August 11<sup>th</sup>. He is my only nephew, 
+                so obviously, he is my favorite baby in the universe. 
+                He's also the <strong>cutest</strong> baby on the planet, 
+                I know I've said that already! Click on the thumbnails below to view them larger!</p>
+                </div>
+
+                <!--         Inline block
+                        1. Can have stuff on either side (inline positive)
+                        2. Can have height/width (block positive)
+                        3. Can have top/bottom padding/margin (block positive)
+                -->
+        </div>
+    
+        <div id="big-photo">
+            <img class="full-size" src="./quinn1.jpg" name="bigImage">
+        </div>
+        <div id="thumbs">
+            <div class="thumb-cont"><img class="thumb" src="./quinn2.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn3.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn4.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn5.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn6.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn7.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn8.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn9.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn10.jpg" onclick="bigImage.src = this.src" /></div>
+            <div class="thumb-cont"><img class="thumb" src="./quinn1.jpg" onclick="bigImage.src = this.src"></div> 
+       </div>
+                
+            </div>
+            
+</body>
+</html>

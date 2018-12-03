@@ -1,0 +1,124 @@
+<!-- HTML 101 -->
+
+<!-- HTML Tags:
+
+OPENING TAGS:
+start with a <
+    whatever is inside the "tag"
+close with a > 
+eg: <html>
+
+CLOSING TAGS:
+start with <
+    add / 
+    whatever is inside the "tag"
+    close with a >
+eg: </html> -->
+
+
+PAGE STRUCTURE: The boilerplate starting code is below-->
+
+<!-- This (DOCTYPE) tells the broswer what this thing is -->
+<!DOCTYPE html>
+<!-- HTML tag starts everything in the file -->
+<html>
+<!-- HEAD is where stuff goes that the user is not supposed to see, style tags, css files, JS files, 
+    title of page, meta tags, etc...The page needs the head stuff, for the body! -->
+<head>
+    <!-- Meta tags give information about your page to someone -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- How the search engines will list your page and what will appear on the browswer tab/window top -->
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This usually links to a CSS file! -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- This is where we link JS files -->
+    <script src="main.js"></script>
+</head>
+<!-- ^ id and ^class are 'attributes' of the tag -->
+<!-- if the word is solid blue: it's a tag
+    if it's light blue it's an attribute
+    if it's orange, it's a string
+    if the word is white, i'll show up on the Page
+    if it's green it's a comment -->
+<!-- The body is where the stuff that the user is supposed to see! -->
+<body id="body" class="my-class">
+    This is the body!
+    <!-- h1 - h6 = a header -->
+    <h1>Header</h1>
+    <h2>Header</h2>
+    <h3>Header</h3>
+    <h4>Header</h4>
+    <h5>Header</h5>
+    <h6>Header</h6>
+
+    <div> = divider, it's a structural tag. It does nothing but help you
+        organize your html. BLOCK.
+    </div>
+
+    <span>is also a structural tag. it does nothing but give you something
+        to organize or target. INLINE.
+    </span>
+
+    <p> p is for paragraph! and is also structural</p> 
+
+    <!--Aesthetic Tags change the way the content looks-->
+
+    <strong>is strong!</strong>
+    <em>is emphasized!</em>
+    <b>bold not really used</b>
+    <i>italic also not often used></i>
+    <hr/> also not used that often anymore!
+    <sup>superscript!</sup>
+    <sub>subscript!</sub>
+    <strike>don't use me</strike>
+    <abbr> this is an abbr tag></abbr>
+    <br/> but we don't use breaks anymore that often if we properly use block elements
+
+
+
+    <!--Semantic Tag: unlike a an aesthetic or structural tag, 
+        it tells you what is INSIDE the tag-->
+    
+    <nav>Nav bar</nav>
+    <footer>footer</footer>
+
+    <!--Lists!-->
+    <ol>ordered list!
+        <li>list items!</li>
+        <li>another item!</li>
+        </ol>
+
+    <ul>unordered list
+        <li>hello</li>
+        <li>again!</li>
+    </ul>
+
+    <!-- a = anchor tag!
+    an anchor tag goes somewhere else--either somewhere else on this page,
+    or another page entirely! -->
+
+    <a href="https://google.com">This part shows on the page!</a>
+    <a href="mail:katiejduane@gmail.com">Email Katie!</a>
+    <a href ="tel:17168636852">Call Katie!</a> 
+    <!-- include the 1! -->
+    <br/>
+    <br />
+    <!-- IMAGES! -->
+    <img alt="Horses on the beach"src="https://equusmagazine.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_620/MTQ1Mjc2NDE4Mzk1MjE5MzUy/feral-horse-and-foal-walk-along-the-beach-on-vieques-island-off-puerto-rico.webp"/>
+
+    <form action="" method="">
+        <input type="text" placeholder="TYpe your name"/>
+        <input type="number" placeholder="Numbers only" />
+        <input type="date" />
+        <input type="password" placeholder="Enter password"/>
+        <input type="email" placeholder="Email"/> 
+        <input type="submit" value="submit form!"/>
+    </form>
+    <!-- ^to separate you can use divs or p tags^ -->
+
+
+</body>
+</html>
+

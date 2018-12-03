@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Places to visit in Georgia!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* div with no . and no # will target a tag
+        # will target an id 
+        . will target a class */
+        /* div{
+            border: 2px solid black
+        } */
+        #gallery-wrapper{
+            border: solid red 2px;
+            text-align: center;
+        }
+        #top-section{
+            border: solid blue 2px;
+        }
+        #middle-section{
+            border: solid green 2px;
+        }
+        #bottom-section{
+            border: solid pink 2px;
+        }
+        .thumb{
+            width: 15% ;/* percentages are ideal for width because 
+            of responsive web design/diff screen sizes! */
+        }
+        img{
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <!--a wrapper for the entire gallery, the div does nothing other than help up organize our content!-->
+    <div id="gallery-wrapper"> <!--avoid spaces in classes, it reads as 2 separate items-->
+        <div id="top-section">
+            <h1>A photo gallery made with HTML, CSS, and a tiny bit of JS</h1>
+
+        </div>
+        <!-- an id is unique on a page, only one of each!
+        a class is not unique, but groups things! -->
+        <div id="middle-section">
+                <img class="thumb" src="./arabia_mnt.jpg" onclick="bigImage.src = this.src"/>
+                <img class="thumb" src="./callaway_gardens.jpg"onclick="bigImage.src = this.src" />
+                <img class="thumb" src="./Etowah_Indian_Mounds.jpg" onclick="bigImage.src = this.src"/>
+                <img class="thumb" src="./prov_state_canyon.jpg" onclick="bigImage.src = this.src"/>
+                <img class="thumb" src="./wormsloe.jpg" onclick="bigImage.src = this.src"/>
+        </div>
+        <div id="bottom-section">
+            <img src="./prov_state_canyon.jpg" name="bigImage">
+ 
+        </div>
+    </div>
+</body>
+</html>
