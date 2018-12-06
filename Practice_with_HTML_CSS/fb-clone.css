@@ -1,0 +1,15 @@
+.nav-bar {
+    display: flex;
+}
+
+.right-bar {
+    display: flex;
+}
+
+.main {
+    display:flex;
+}
+
+.left-bar {
+    display: flex;
+}
