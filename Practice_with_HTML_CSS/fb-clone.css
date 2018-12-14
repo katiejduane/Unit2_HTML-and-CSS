@@ -1,15 +1,56 @@
+.body {
+    margin: 0; 
+    /* why is this not getting rid of the white space at the edges?! */
+}
+
 .nav-bar {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(54, 72, 173);
+    width: 100%;
+    height: 45px;
+    margin: 0;
+}
+
+.nav-left {
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    width: 35%;
+    height: 40px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+    padding-right: 5px;
+}
+
+.nav-right {
+    border: 1px solid white;
+    width: 35%;
+    height: 40px;
 }
 
 .right-bar {
     display: flex;
+    border: 1px solid black;
 }
 
 .main {
     display:flex;
+    border: 1px solid black;
 }
 
 .left-bar {
     display: flex;
+    border: 1px solid black;
 }
+
