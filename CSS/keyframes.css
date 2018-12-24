@@ -1,0 +1,43 @@
+/* Here's the css used for the blob animation (the html is just a plain html page with a <div class="blob" /> in it. */
+
+body {
+ background: #f9f;
+}
+
+.blob {
+ font-size: 30px;
+ font-weight: 900;
+ font-family: 'Lucida Sans';
+ border: 6px rgba(175,70, 175, .8) solid;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #333;
+ border-radius: 12px;
+ position: absolute;
+ top: 100px;
+ left: 100px;
+ height: 60px;
+ width: 80px;
+ animation: blob 4s 2 forwards;
+ background: url(https://blog.csiro.au/wp-content/uploads/2017/02/iStock-170615172-1024x642.jpg
+https://blog.csiro.au/wp-content/uploads/2017/02/iStock-170615172-1024x642.jpg
+)
+}
+
+@keyframes blob {
+ 0% {
+   transform: skew(35deg);
+   left: 200px;
+   background-position: -10px -10px;
+ }
+ 50.5% {
+   transform: skew(-35deg);
+   background-position: -30px -30px;
+ }
+ 100% {
+   transform: skew(35deg);
+   left: 150px;
+   background-position: -10px -10px;
+ }
+}
